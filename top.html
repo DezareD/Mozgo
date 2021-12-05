@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOZGO - Личный проводник в мир кино.</title>
+
+    <!-- STYLE'S and FONT'S SECTION -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <link href="css/application.css" rel="stylesheet">
+    <link href="css/preloader.css" rel="stylesheet">
+
+    <!-- ICON'S -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- JAVA SCRIPT SECTION -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- SEEDING FILMS -->
+    <script>
+        $(document).ready(function() {
+            seedTopFilms(".-js-seeding-top-outer");
+        });
+    </script>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+
+    <div class="_cl_application">
+        <div class="_cl_navbar">
+            <div class="container _cl_nabar-inner">
+                <div class="brand-item">
+                    <div class="logotype-outer">
+                        <img src="img/logotype.png">
+                    </div>
+                    <div>
+                        <p class="brand-text">MOZGO</p>
+                        <p class="brand-mini-text">Ваш проводник в мир кино.</p>
+                    </div>
+                </div>
+                <div class="menu-bar-outer phone">
+                    <span class="menu-bar-item active -js-menu-clicked">
+                        <span class="material-icons">menu</span>
+                        <div class="phone-menu">
+                            <a class="menu-bar-item" href="index.html">
+                                <span class="material-icons">home</span>
+                                <p>Главная</p>
+                            </a>
+                            <a class="menu-bar-item active" href="top.html">
+                                <span class="material-icons">emoji_events</span>
+                                <p>Топ лучших</p>
+                            </a>
+                            <a class="menu-bar-item" href="history.html">
+                                <span class="material-icons">menu_book</span>                            
+                                <p>История фильмографии</p>
+                            </a>
+                            <a class="menu-bar-item" href="new.html">
+                                <span class="material-icons">local_fire_department</span>                            
+                                <p>Новинки</p>
+                            </a>
+                            <a class="menu-bar-item" href="actors.html">
+                                <span class="material-icons">face</span>                            
+                                <p>Актёры и режиссёры</p>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-bar-outer">
+                    <a class="menu-bar-item" href="index.html">
+                        <span class="material-icons">home</span>
+                        <p>Главная</p>
+                    </a>
+                    <a class="menu-bar-item active" href="top.html">
+                        <span class="material-icons">emoji_events</span>
+                        <p>Топ лучших</p>
+                    </a>
+                    <a class="menu-bar-item" href="history.html">
+                        <span class="material-icons">menu_book</span>                            
+                        <p>История фильмографии</p>
+                    </a>
+                    <a class="menu-bar-item" href="new.html">
+                        <span class="material-icons">local_fire_department</span>                            
+                        <p>Новинки</p>
+                    </a>
+                    <a class="menu-bar-item" href="actors.html">
+                        <span class="material-icons">face</span>                            
+                        <p>Актёры и режиссёры</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="thin-container">
+            <div class="_cl_body">
+                <p class="general-text">Топ-фильмов</p>
+                <div class="-js-seeding-top-outer films-top-template"></div>
+            </div>
+            <div class="_cl_footer">
+                <p>Сайт был создан в ознакомительных некомерческих целях</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
